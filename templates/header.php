@@ -9,7 +9,7 @@
     </ul>
   </div>
   <div class="row">
-    <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <a class="logotype" href="<?= esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logotype.png" alt="<?php bloginfo('name'); ?>" /></a>
   </div>
 </div>
 
