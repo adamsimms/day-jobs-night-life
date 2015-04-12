@@ -1,3 +1,18 @@
+<div class="container">
+  <div class="row">
+    <ul class="swatches">
+      <li class="blue"></li>
+      <li class="green"></li>
+      <li class="pink"></li>
+      <li class="orange"></li>
+      <li class="grey"></li>
+    </ul>
+  </div>
+  <div class="row">
+    <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+  </div>
+</div>
+
 <?php use Roots\Sage\Nav\NavWalker; ?>
 
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
@@ -9,7 +24,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
