@@ -69,9 +69,32 @@
     -o-transition: all 1s ease;
     transition: all 1s ease;
     filter: hue-rotate(180deg);
-	-webkit-filter: hue-rotate(180deg);
-	-moz-filter: hue-rotate(180deg);
-	-o-filter: hue-rotate(180deg);
-	-ms-filter: hue-rotate(180deg);
+  	-webkit-filter: hue-rotate(180deg);
+  	-moz-filter: hue-rotate(180deg);
+  	-o-filter: hue-rotate(180deg);
+  	-ms-filter: hue-rotate(180deg);
   }
+}
+
+.navbar {
+  margin: @spacing-md 0 @spacing-sm;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+
+  .container {
+    border-top: 1px solid @grey;
+    border-bottom: 1px solid @grey;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li {
+    margin: @spacing-xs 0;
+    width: 20%;
+    text-align: center;
+  }
+
 }
