@@ -83,18 +83,108 @@
   text-transform: uppercase;
 
   .container {
-    border-top: 1px solid @grey;
-    border-bottom: 1px solid @grey;
+    border-top: 1px solid @grey-light;
+    border-bottom: 1px solid @grey-light;
+  }
+
+  .caret {
+    display: none;
   }
 
   ul {
-    width: 100%;
+    width: auto;
+    margin: 0;
   }
 
   li {
-    margin: @spacing-xs 0;
-    width: 20%;
-    text-align: center;
+    margin: @spacing-xs @spacing-sm;
+    text-align: left;
+
+    a {
+      font-size: @h3;
+      font-weight: @bold;
+    }
+
+    &.menu-montreal {
+      a {
+        color: @blue;
+      }
+
+      &:hover {
+        background: @blue;
+
+        a {
+          color: @white;
+        }
+      }
+    }
+
+    &.menu-culture  {
+      a {
+        color: @green;
+      }
+
+      &:hover {
+        background: @green;
+
+        a {
+          color: @white;
+        }
+      }
+    }
+
+    &.menu-scene {
+      a {
+        color: @pink;
+      }
+
+      &:hover {
+        background: @pink;
+
+        a {
+          color: @white;
+        }
+      }
+    }
+
+    &.menu-blogs {
+      a {
+        color: @orange;
+      }
+
+      &:hover {
+        background: @orange;
+
+        a {
+          color: @white;
+        }
+      }
+    }
+
+    &.menu-concierge {
+      a {
+        color: @grey;
+      }
+
+      &:hover {
+        background: @grey;
+
+        a {
+          color: @white;
+        }
+      }
+    }
   }
 
+  .et_social_networks {
+    width: auto;
+    float: right;
+    margin: @spacing-sm;
+
+    li {
+        margin: 0 @spacing-xs;
+        width: 40px;
+      }
+    }
+  }
 }
