@@ -8,23 +8,20 @@
     },
     "main.css": {
       "files": [
-        "styles/main.less"
+        "styles/main.scss"
       ],
       "main": true
     },
-    "editor-style.css": {
+    "customizer.js": {
       "files": [
-        "styles/editor-style.less"
+        "scripts/customizer.js"
       ]
     },
     "jquery.js": {
       "bower": ["jquery"]
-    },
-    "modernizr.js": {
-      "bower": ["modernizr"]
     }
   },
   "config": {
-    "devUrl": "http://localhost:8888/djnl"
+    "devUrl": "http://example.dev"
   }
 }
