@@ -1,7 +1,11 @@
+.branding {
+  padding-bottom: $spacing-sm;
+}
+
 .swatches {
   list-style: none;
   margin: 0 0 $spacing-md;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 $spacing-xs;
 
   li {
     display: block;
@@ -48,7 +52,7 @@
 
 .logotype {
     display: block;
-    margin: $spacing-sm 0 $spacing-lg;
+    margin: $spacing-sm/2 0 0;
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;
@@ -71,17 +75,18 @@
 }
 
 .social-media {
-  margin: $spacing-md*1.75 0 0;
-  float: right;
+  margin: $spacing-md $spacing-xs 0;
+  float: left;
 
   li {
     display: inline;
     list-style: none;
+    margin: 0 $spacing-xs/2 0;
   }
 
   img {
-    height: 36px;
-    width: 36px;
+    height: 48px;
+    width: 48px;
   }
 
   a {
@@ -112,12 +117,11 @@
 }
 
 .nav-primary {
-  margin: $spacing-md 0;
+  margin: 0;
   background: none;
   text-transform: uppercase;
-  height: 60px;
   width: 100%;
-  font-size: 1.25em;
+  font-size: 2em;
 
   ul {
     width: auto;
@@ -125,21 +129,18 @@
   }
 
   li {
-    margin: $spacing-xs $spacing-lg 0 0;
+    margin: 0 $spacing-lg*1.5 0 0;
     text-align: left;
     display: inline;
     float: left;
 
     a {
-      font-weight: $bold;
+      font-weight: $light;
       color: $blue;
 
       &:hover {
-        background: $blue;
-
-        a {
-          color: $white;
-        }
+        border-bottom: 2px solid $blue;
+        text-decoration: none;
       }
     }
   }

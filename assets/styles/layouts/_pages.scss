@@ -1,15 +1,18 @@
 .banner-posts {
   width: 100%;
+  margin: $spacing-sm 0 0;
 
   h3 {
-    display: block;
+    color: $grey;
     float: left;
-    max-width: 122px;
+    font-weight: $light;
+    margin: $spacing-lg*1.5 0 0 0;
   }
 
   ul {
     display: block;
-    float: left;
+    margin-bottom: 0;
+    float: right;
   }
 
   li {
@@ -17,8 +20,8 @@
     display: inline;
     float: left;
     height: 100px;
-    width: 180px;
-    margin: 0 $spacing-sm $spacing-md 0;
+    width: 184px;
+    margin: 0 $spacing-sm $spacing-sm 0;
     background: $black;
 
     &:last-child {
@@ -28,7 +31,7 @@
 
   img {
     height: 100px;
-    width: 180px;
+    width: 100%;
     z-index: 100;
     -webkit-opacity: .5;
     -moz-opacity: .5;
@@ -55,35 +58,5 @@
     top: -30px;
     left: $spacing-sm;
     position: relative;
-  }
-}
-
-.sidebar-posts {
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-    margin: 0 0 $spacing-md 0;
-  }
-
-  .thumbnail {
-    height: 110px;
-    overflow: hidden;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  a {
-    &:hover {
-      color: $blue;
-      text-decoration: none;
-    }
   }
 }
