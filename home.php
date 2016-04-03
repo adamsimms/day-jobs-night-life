@@ -1,5 +1,5 @@
 <?php //get_template_part('templates/page', 'header'); ?>
-<hr />
+
 <?php if (!have_posts()) : ?>
   <div clas="row">
     <div class="col-xs-12">
@@ -11,9 +11,8 @@
   </div>
 <?php endif; ?>
 
-
-<div class="row">
-  <div class="col-xs-12">
+<div class="row hidden-xs-down">
+  <div class="col-xs-10 col-xs-offset-1">
     <div class="banner-posts">
       <h3><em>Recent</em></h3>
       <ul>
@@ -38,10 +37,14 @@
   </div>
 </div>
 
-<hr />
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 hidden-xs-down">
+      <hr />
+  </div>
+</div>
 
-  <div class="row">
-    <div class="col-xs-12">
+  <div class="row hidden-xs-down">
+    <div class="col-xs-11 col-sm-10 col-sm-offset-1">
       <nav class="nav-primary">
         <?php
           if (has_nav_menu('primary_navigation')) : wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
@@ -51,10 +54,15 @@
     </div>
   </div>
 
-<hr />
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1  hidden-xs-down">
+        <hr />
+    </div>
+  </div>
 
   <div class="row">
-    <div class="col-xs-8">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-1">
+
       <?php $the_query = new WP_Query( $args=array(
 					'meta_key'=>'feature-index',
 					'meta_value'=> 'feature-1',
@@ -69,7 +77,7 @@
       	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-3 hidden-xs-down">
       <div class="sidebar-posts">
         <h4><a href="#"><em>Trend</em> <span class="btn-arrow">&#8594;</span></a></h4>
         <?php
@@ -90,10 +98,15 @@
     </div>
   </div>
 
-<hr />
-
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-xs-10 col-xs-offset-1">
+      <hr />
+  </div>
+</div>
+
+
+<div class="row hidden-xs-down">
+  <div class="col-xs-10 col-xs-offset-1">
     <div class="banner-posts">
       <h3><em>Trending</em></h3>
       <ul>
@@ -118,10 +131,14 @@
   </div>
 </div>
 
-<hr />
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1  hidden-xs-down">
+      <hr />
+  </div>
+</div>
 
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-xs-offset-1">
       <?php $the_query = new WP_Query( $args=array(
 					'meta_key'=>'feature-index',
 					'meta_value'=> 'feature-2',
@@ -138,7 +155,7 @@
       	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3 hidden-xs-down">
       <div class="sidebar-posts">
         <h4><a href="#"><em>Travel</em> <span class="btn-arrow">&#8594;</span></a></h4>
         <?php
@@ -162,7 +179,7 @@
 <hr />
 
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-1">
       <?php $the_query = new WP_Query( $args=array(
 					'meta_key'=>'feature-index',
 					'meta_value'=> 'feature-3',
@@ -179,7 +196,7 @@
       	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3 hidden-xs-down">
       <div class="sidebar-posts">
         <h4><a href="#"><em>Details</em> <span class="btn-arrow">&#8594;</span></a></h4>
         <?php

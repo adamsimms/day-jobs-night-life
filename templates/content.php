@@ -1,6 +1,5 @@
 <article <?php post_class(); ?>>
-  <?php $image = get_field('large'); ?>
-  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
     <h2 class="entry-title">
       <a href="<?php the_permalink(); ?>">
         <?php the_title(); ?>

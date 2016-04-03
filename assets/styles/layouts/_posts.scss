@@ -2,11 +2,8 @@ article {
   margin: $spacing-sm 0 ;
 
   img {
-
-    &.featured {
-      min-width: 100%;
-      background: $grey;
-    }
+    height: auto !important;
+    width: 100% !important;
   }
 
   a {
